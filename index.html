@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+</head>
+<body>
+    <section class="header">
+        <div class="outer"> 
+            <p class="text-center bolder"> MEME GENERATOR</p>
+        </div>
+    </section>
+    <section class="main">
+        <div class="outer">
+                <div class="row ">
+                    <div class="col-lg-5 ml-4 mt-4 bg-white border border-primary rounded-lg">
+                        <div class="container">
+                            <div class="outer">
+                                <input type="file" class="form-control-file form-control-sm mt-2" id="file" accept="images/*"/>
+                                <canvas width="500px" height="400px" class="image-container border border-primary mb-4"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mt-5 ml-5">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="input Top">Top text</label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <input class="form-control form-control-md" id="topLineText" type="text" placeholder="enter top text">
+                                    </div> 
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <label for="inputBottom">Bottom text</label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <input id="bottomLineText" class="form-control form-control-md" type="text" placeholder=" enter bottom text">
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <label for="inputBottom">font-size</label>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <input type="range" id="fontSize"
+                                            min="10"
+                                            max="100"
+                                            step="1"
+                                            value="0"/>
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col-md-4">
+                                        <label for="selectpicker">Select color</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <select class="selectpicker" data-live-search="true" title="select Color" id="fontColor">
+                                            <option data-tokens="red"style="background: red; color: #fff;"value="red">red</option>
+                                            <option data-tokens="blue"style="background: blue; color: #fff;" value="blue">blue</option>
+                                            <option data-tokens="yellow"style="background: rgb(247, 210, 1); color: #fff;"value="yellow">yellow</option>
+                                            <option data-tokens="green"style="background: green; color: #fff;" value=green>green</option>
+                                            <option data-tokens="brown"style="background: brown; color: #fff;"value="brown">brown</option>
+                                            <option data-tokens="orange"style="background: white; color: #000;"value="white">white</option>
+                                      </select>   
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <button class="btn btn-md btn-primary mt-5 col-md-6 mb-5 ml-3" id="saveBtn">Download Meme</button>
+                                </div>
+                            </div>   
+                    </div>
+                    
+                </div>
+            </div>    
+    </section>
+     
+ <script src="js/script.js"></script>   
+</body>
+</html>
